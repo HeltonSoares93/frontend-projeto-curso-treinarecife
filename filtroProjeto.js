@@ -3,6 +3,10 @@ function atualizarConteiner() {
   const projetos = JSON.parse(localStorage.getItem('projetos')) || [];
   console.log(projetos);
 
+  const totalProjetos = projetos.lenght;
+  document.getElementById('registros_exibidos').innerText = totalProjetos;
+  document.getElementById('registros_totais').innerText = totalProjetos;
+
   divPai.innerHTML = '';
 
   projetos.forEach(projeto => {
