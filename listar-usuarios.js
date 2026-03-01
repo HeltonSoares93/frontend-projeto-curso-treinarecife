@@ -24,10 +24,6 @@ function listarUsuarios() {
     `
     divPai.appendChild(divProjeto);
   });
-
-
-
-
 }
 
 listarUsuarios();
